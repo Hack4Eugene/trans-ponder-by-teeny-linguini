@@ -76,13 +76,56 @@
         </div>
     </div>
 
-    <!-- Modal -->
+	<div class="modal fade" id="confirmModal" tabindx="-1" role="dialog" aria-labelledby="confirmModel" aria-hidden="true">
+		<div class ="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-header">
+						<p class="modal-title">Confirm</p>
+						<button type="btn btn-primary" class="close" data-dismiss="modal" aria-label="close">
+							<span aria-hidden="true"&times;</span>
+						</button>
+					</div>
+
+					<div class="modal-body">
+
+						<div class="form-group">
+							<p> Name of Organization </p>
+							<input type="text" class="form-control" id="organization"></input>
+						</div>	
+
+						<div class="form-group">
+							<p> Description of Organization </p>
+							<textarea class="form-control" id ="description">
+						</div>
+
+						<div class="form-group">
+							<p> Location </p>
+							<input type="text" class="form-control" id="location">
+						</div>
+
+						<div class="form-group">
+							<p> Type of Service </p>
+							<input type="text" class="form-control" id="location">
+						</div>
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-success" id="confirmationSubmit"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <!-- Modal(s) -->
     <div class="modal fade" id="loginForm" tabindex="-1" role="dialog" aria-labelledby="loginForm" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title text-center ">Login</h1>
-                    <button type="btn btn-primary" class="close" data-dismiss="modal" aria-label="close"></button>
+                    <button type="btn btn-primary" class="close" data-dismiss="modal" aria-label="close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
