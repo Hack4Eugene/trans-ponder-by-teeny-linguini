@@ -36,6 +36,10 @@ $("#searchTerm").on("keyup", function() {
     });
 });
 
+$("#logout").click(function() {
+	logout();
+});
+
 /* Initalize Firebase */
 
 function initFirebase() {
@@ -180,21 +184,14 @@ function updateOrganizations() {
 /* Admin Panel */
 
 function insertConfirm(name, desc, loc, type) {
-	var cardStart = "<div class='card' id='" + name + "'>";
-	var cardBodyStart = "<div class='card-body'>";
-	var cardTitleStart = "<h1 class='card-title'>" + name
-	var cardTextStart ="<p class='card-text'>" + desc;
 
+	var listStart = "<li class='list-group-item' id='" + name + "'>" + name;
+	var listEnd = "</li>"
 
-	var cardEnd = "</div>";
-	var cardBodyEnd = "</div>";
-	var cardTitleEnd = "</h1>";
-	var cardTextEnd = "</h1>";
+	var list = listStart + listEnd;
 
-	cardFull = cardStart + cardBodyStart + cardTitleStart + cardTitleEnd + cardTextStart + cardTextEnd;
+	$('#confirmations').append(list);
 
-
-	$("#confirmations").append(cardFull);	    
 }
 
 var confirmations = {} 

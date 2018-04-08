@@ -308,12 +308,20 @@ textarea {
     margin-top: 3%;
 }
 
+.bottom {
+	margin-bottom: 3%;
+}
+
 .no-pad {
     padding: 0;
 }
 
 .float-right {
     margin-left: auto; 
+}
+
+.small-pad {
+	padding: 1%;
 }
 
 #mapsCanvas {
@@ -382,4 +390,5 @@ tr:hover {
 
     #transInfo {
         width: 35%;
-    }
+    {
+}
